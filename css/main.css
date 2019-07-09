@@ -52,10 +52,14 @@
 body {
   color: #777777;
   font-family: "Poppins", sans-serif;
-  font-size: 14px;
   font-weight: 300;
-  line-height: 1.625em;
+  line-height: 1.7em;
   position: relative;
+}
+
+p{
+  font-size: 1.3em;
+  line-height: 1.6em;
 }
 
 ol, ul {
@@ -66,6 +70,15 @@ ol, ul {
 
 select {
   display: block;
+}
+
+section{
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+section:nth-child(even) {
+  background-color: #f9f9ff;
 }
 
 figure {
@@ -1955,16 +1968,22 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .p1-gradient-bg, .primary-btn, .primary-btn2:hover, .default-header, .dropdown-menu, .banner-area, .myself-wrap .desc .talk-btn, .skillbar-bar, .single-feature:hover, .single-footer-widget .click-btn, .generic-banner {
-  background-image: -moz-linear-gradient(0deg, #62bdfc 0%, #8490ff 100%);
+  /* background-image: -moz-linear-gradient(0deg, #62bdfc 0%, #8490ff 100%);
   background-image: -webkit-linear-gradient(0deg, #62bdfc 0%, #8490ff 100%);
-  background-image: -ms-linear-gradient(0deg, #62bdfc 0%, #8490ff 100%);
+  background-image: -ms-linear-gradient(0deg, #62bdfc 0%, #8490ff 100%); */
+  background: #005C97;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #363795, #005C97);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #363795, #005C97); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+  
 }
 
-.p1-gradient-color, .single-service a:hover, .footer-social a:hover i, .single-footer-widget .bb-btn {
+.p1-gradient-color, .single-service a, .footer-social a:hover i, .single-footer-widget .bb-btn {
   background: -moz-linear-gradient(0deg, #62bdfc 0%, #8490ff 100%);
   background: -webkit-linear-gradient(0deg, #62bdfc 0%, #8490ff 100%);
   background: -ms-linear-gradient(0deg, #62bdfc 0%, #8490ff 100%);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
@@ -2136,7 +2155,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .banner-left h1 {
   color: #000;
-  font-size: 36px;
+  font-size: 3em;
   font-weight: 100;
   line-height: 1em;
   margin-bottom: 40px;
@@ -2212,14 +2231,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .single-service .icon {
   margin-right: 40px;
-}
-
-.single-service a {
-  color: #000;
-}
-
-.about-area {
-  background-color: #f9f9ff;
 }
 
 .myself-wrap {
@@ -2331,9 +2342,9 @@ h1, h2, h3, h4, h5, h6 {
   height: 1px;
 }
 
-.project-area {
+/* .project-area {
   background-color: #f9f9ff;
-}
+} */
 
 .single-project a {
   color: #000;
@@ -2360,7 +2371,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .single-feature {
-  background-color: #f9f9ff;
+  /* background-color: #f9f9ff; */
   padding: 30px 30px 15px 30px;
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
@@ -2408,12 +2419,15 @@ h1, h2, h3, h4, h5, h6 {
 
 .form-area input, .form-area textarea {
   border-radius: 0;
-  font-size: 12px;
 }
 
 .form-area textarea {
-  height: 180px;
+  height: 195px;
   margin-top: 0px;
+}
+
+.form-area button{
+  font-size: 12px;
 }
 
 .footer-area {
@@ -2433,7 +2447,8 @@ h6 {
 }
 
 .footer-social a {
-  padding-right: 25px;
+  padding: 0 1em;
+  font-size: 2em;
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
