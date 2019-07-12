@@ -73,11 +73,11 @@ select {
 }
 
 section{
+  animation-name: fadeIn;
+  animation-duration: 1s;
   min-height: 100vh;
   display: flex;
   align-items: center;
-}
-section:nth-child(even) {
   background-color: #f9f9ff;
 }
 
