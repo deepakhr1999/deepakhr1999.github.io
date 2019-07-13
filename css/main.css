@@ -81,6 +81,25 @@ section{
   background-color: #f9f9ff;
 }
 
+section.banner-area{
+  display: block;
+}
+
+.intro{
+  position: absolute;
+  z-index: 5;
+  top: 50%;right: 50%;
+  transform: translate(50%,-50%);
+}
+#particles{
+  position: relative;
+  z-index: 4;
+}
+
+#particles canvas{
+  height: 100vh !important;
+}
+
 figure {
   margin: 0;
 }
