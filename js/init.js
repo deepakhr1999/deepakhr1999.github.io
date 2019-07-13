@@ -39,6 +39,9 @@ app.config(function($routeProvider) {
 app.controller('HomeController', ['$scope', function($scope) {
     /*ParticlesJS configuration*/
     particlesJS.load('particles', 'js/particles.json', function() {
-      console.log('callback - particles.js config loaded');
+      console.log('Callback - particles.js config loaded; deepakhr1999 eats z-index for breakfast');
     });
 }]);
+
+console.log("Looks like you are interested!")
+console.log("This is a highly modified version of the Resume theme from Colorlib, available at https://colorlib.com/wp/template/resume/")
