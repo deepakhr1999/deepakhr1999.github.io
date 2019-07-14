@@ -24,8 +24,8 @@ app.config(function($routeProvider) {
     .when("/", {
         templateUrl : "home.html"
     })
-    .when("/interests", {
-        templateUrl : "interests.html"
+    .when("/about", {
+        templateUrl : "about.html"
     })
     .when("/contact",{
         templateUrl: "contact.html"
@@ -35,7 +35,7 @@ app.config(function($routeProvider) {
     });
 });
  
-//On routing we like to perform some commands
+//Commands on init
 app.controller('HomeController', ['$scope', function($scope) {
     /*ParticlesJS configuration*/
     particlesJS.load('particles', 'js/particles.json', function() {
