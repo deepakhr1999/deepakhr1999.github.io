@@ -32,7 +32,7 @@
     </head>
     <body ng-app="myApp">
         <!-- Start Header Area -->
-        <header class="default-header">
+<!--         <header class="default-header">
             <nav class="navbar navbar-expand-lg  navbar-light">
                 <div class="container">
                         <a class="navbar-brand" href="#">
@@ -47,12 +47,31 @@
                             <li><a href="#" data-toggle="tab" data-target="#">Home</a></li>
                             <li><a href="#about" data-toggle="tab" data-target="#about">About</a></li>
                             <li><a href="#project" data-toggle="tab" data-target="#project">Projects</a></li>
-                            <li><a href="#contact" data-toggle="tab" data-target="#contact">Contact</a></li>									
+                            <li><a href="#contact" data-toggle="tab" data-target="#contact">Contact</a></li>                                    
                         </ul>
-                        </div>						
+                        </div>                      
                 </div>
             </nav>
-        </header>
+        </header> -->
+        <nav class="navbar navbar-expand-lg sticky-top navbar-light">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="img/logo.png" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="text-white lnr lnr-menu"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-end align-items-center" id="navbarSupportedContent">
+                    <ul class="navbar-nav">
+                        <li><a href="#" data-toggle="tab" data-target="#">Home</a></li>
+                        <li><a href="#about" data-toggle="tab" data-target="#about">About</a></li>
+                        <li><a href="#project" data-toggle="tab" data-target="#project">Projects</a></li>
+                        <li><a href="#contact" data-toggle="tab" data-target="#contact">Contact</a></li>                                    
+                    </ul>
+                </div>                      
+            </div>
+        </nav>
         <div id="content-block">
             <div ng-view ></div>
         </div>
@@ -70,7 +89,7 @@
         <script src="js/jquery.magnific-popup.min.js"></script>
         <script src="js/parallax.min.js"></script>			
         <script src="js/owl.carousel.min.js"></script>			
-        <script src="js/jquery.sticky.js"></script>
+        <!-- <script src="js/jquery.sticky.js"></script> -->
         <script src="js/main.js"></script>
         <script src="js/particles.min.js"></script>
         <script src="js/aos.js"></script>

@@ -1,11 +1,3 @@
-/*--------------------------- Color variations ----------------------*/
-/* Medium Layout: 1280px */
-/* Tablet Layout: 768px */
-/* Mobile Layout: 320px */
-/* Wide Mobile Layout: 480px */
-/* =================================== */
-/*  Basic Style 
-/* =================================== */
 ::-moz-selection {
   /* Code for Firefox */
   background-color: #8490ff;
@@ -17,38 +9,15 @@
   color: #fff;
 }
 
-::-webkit-input-placeholder {
-  /* WebKit, Blink, Edge */
-  color: #777777;
-  font-weight: 300;
+body, nav{
+/*  background: #005C97;  
+  background: -webkit-linear-gradient(to right, #363795, #005C97);  
+  background: linear-gradient(to right, #363795, #005C97); 
+*/ 
+background: #045dca;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #021B79, #045dca);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #021B79, #045dca); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
-
-:-moz-placeholder {
-  /* Mozilla Firefox 4 to 18 */
-  color: #777777;
-  opacity: 1;
-  font-weight: 300;
-}
-
-::-moz-placeholder {
-  /* Mozilla Firefox 19+ */
-  color: #777777;
-  opacity: 1;
-  font-weight: 300;
-}
-
-:-ms-input-placeholder {
-  /* Internet Explorer 10-11 */
-  color: #777777;
-  font-weight: 300;
-}
-
-::-ms-input-placeholder {
-  /* Microsoft Edge */
-  color: #777777;
-  font-weight: 300;
-}
-
 body {
   color: #777777;
   font-family: "Poppins", sans-serif;
@@ -1980,8 +1949,8 @@ h1, h2, h3, h4, h5, h6 {
   padding: 20px;
 }
 
-.navbar-nav a:hover {
-  color: #000;
+.navbar-nav a:hover{
+  color: #ccc;
 }
 
 @media (max-width: 992px) {
@@ -2024,22 +1993,8 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-/*.p1-gradient-bg, .primary-btn, .primary-btn2:hover, .default-header, .dropdown-menu, .banner-area, .myself-wrap .desc .talk-btn, .skillbar-bar, .single-feature:hover, .single-footer-widget .click-btn, .generic-banner {
-   background-image: -moz-linear-gradient(0deg, #62bdfc 0%, #8490ff 100%);
-  background-image: -webkit-linear-gradient(0deg, #62bdfc 0%, #8490ff 100%);
-  background-image: -ms-linear-gradient(0deg, #62bdfc 0%, #8490ff 100%); 
-  background: #005C97;  
-  background: -webkit-linear-gradient(to right, #363795, #005C97);  
-  background: linear-gradient(to right, #363795, #005C97); 
-  
-  
-}*/
-body, .default-header{
-  background: #005C97;  
-  background: -webkit-linear-gradient(to right, #363795, #005C97);  
-  background: linear-gradient(to right, #363795, #005C97); 
-}
-.p1-gradient-color, .single-service a, .footer-social a i, .single-footer-widget .bb-btn {
+
+/*.p1-gradient-color, .single-service a, .footer-social a i, .single-footer-widget .bb-btn {
   background: -moz-linear-gradient(0deg, #62bdfc 0%, #8490ff 100%);
   background: -webkit-linear-gradient(0deg, #62bdfc 0%, #8490ff 100%);
   background: -ms-linear-gradient(0deg, #62bdfc 0%, #8490ff 100%);
@@ -2047,7 +2002,7 @@ body, .default-header{
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-
+*/
 .primary-btn {
   line-height: 42px;
   padding-left: 30px;
@@ -2139,8 +2094,7 @@ body, .default-header{
   width: 100% !important;
 }
 
-.sticky-wrapper {
-  position: relative;
+.sticky-top {
   z-index: 2000;
 }
 
@@ -2478,7 +2432,6 @@ body, .default-header{
 }
 
 .footer-area {
-  padding-top: 100px;
   background-color: #222222;
 }
 
