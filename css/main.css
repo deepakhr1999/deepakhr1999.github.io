@@ -81,6 +81,7 @@ section{
   background-color: #f9f9ff;
 }
 
+/* HOME */
 section.banner-area{
   display: block;
   position: relative;
@@ -105,6 +106,33 @@ section.banner-area{
 #particles canvas{
   height: 100vh !important;
 }
+
+/* Projects and About */
+
+.menu-content{
+  padding-bottom: 70px;
+}
+
+@media(max-width: 1000px){
+  .image, .information{
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+  .image{
+    margin-bottom: 1em;
+  }
+  .single-project .img-fluid:hover{
+    transform: scale(1);
+  }
+  p{
+    font-size: 1em;
+    line-height: 1.6em;
+  }
+  .menu-content{
+    padding-bottom: 20px;
+  }
+}
+
 
 figure {
   margin: 0;
@@ -170,7 +198,6 @@ h4, h5, h6 {
   margin-top: 0;
   font-family: "Poppins", sans-serif;
   font-weight: 600;
-  color: #222222;
 }
 
 h1, .h1 {
@@ -1970,9 +1997,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .section-gap {
-  padding: 120px 0;
+  padding: 100px 0;
 }
 
+@media(max-width: 1000px){
+  .section-gap{
+    padding: 20px 0;
+  }
+}
 .section-title {
   padding-bottom: 30px;
 }
@@ -2002,7 +2034,7 @@ h1, h2, h3, h4, h5, h6 {
   
   
 }*/
-body{
+body, .default-header{
   background: #005C97;  
   background: -webkit-linear-gradient(to right, #363795, #005C97);  
   background: linear-gradient(to right, #363795, #005C97); 
@@ -2109,7 +2141,7 @@ body{
 
 .sticky-wrapper {
   position: relative;
-  z-index: 1501;
+  z-index: 2000;
 }
 
 .dropdown-item {
